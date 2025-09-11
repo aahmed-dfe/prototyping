@@ -1,4 +1,4 @@
-﻿namespace Contracts.EvaluationHandler;
+﻿namespace Contracts.ChainEvaluationHandler.EvaluationHandler;
 public interface IEvaluationHandler<in TInput, out TOutput>
 {
     bool CanEvaluate(TInput input);

@@ -1,4 +1,4 @@
-﻿namespace Contracts.EvaluationHandler;
+﻿namespace Contracts.ChainEvaluationHandler.EvaluationHandler;
 public class ChainEvaluationHandler<TInput, TOutput> : IChainedEvaluationHandler<TInput, TOutput>
 {
     private readonly IEvaluationHandler<TInput, TOutput> _current;

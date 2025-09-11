@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Contracts.EvaluationHandler;
+using Contracts.ChainEvaluationHandler.EvaluationHandler;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -25,7 +25,9 @@ builder.Services.AddSingleton<IEvaluationHandler<string, string>>(sp =>
 using IHost host = builder.Build();
 
 // Resolve and use the chained handler
-var chainedHandler = host.Services.GetRequiredService<IEvaluationHandler<string, string>>();
+IEvaluationHandler<string, string> chainedHandler
+    = host.Services.GetRequiredService<IEvaluationHandler<string, string>>();
+
 string result = chainedHandler.Evaluate("some input");
 
 Console.WriteLine($"Evaluation result: {result}");
