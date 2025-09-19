@@ -1,4 +1,5 @@
-﻿namespace Contracts.ChainEvaluationHandler.EvaluationHandler;
+﻿namespace Contracts.ChainEvaluationHandler.EvaluationHandler.Chained;
+
 public sealed class ChainedEvaluationHandlerBuilder<TInput, TOutput>
 {
     private readonly List<IChainedEvaluationHandler<TInput, TOutput>> _handlers;
@@ -11,7 +12,8 @@ public sealed class ChainedEvaluationHandlerBuilder<TInput, TOutput>
 
     private IChainedEvaluationHandler<TInput, TOutput> Head => _handlers[_handlers.Count - 1];
 
-    public static ChainedEvaluationHandlerBuilder<TInput, TOutput> Create(IChainedEvaluationHandler<TInput, TOutput> head) => new(head);
+    public static ChainedEvaluationHandlerBuilder<TInput, TOutput> Create(
+        IChainedEvaluationHandler<TInput, TOutput> head) => new(head);
 
     public ChainedEvaluationHandlerBuilder<TInput, TOutput> ChainNext(IChainedEvaluationHandler<TInput, TOutput> next)
     {

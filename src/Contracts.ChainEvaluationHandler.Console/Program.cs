@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Contracts.ChainEvaluationHandler.EvaluationHandler;
+using Contracts.ChainEvaluationHandler.EvaluationHandler.Abstractions;
+using Contracts.ChainEvaluationHandler.EvaluationHandler.Chained;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -13,9 +14,9 @@ builder.Services.AddSingleton<HandlerB>();
 // Build Chained handler and register root handler
 builder.Services.AddSingleton<IEvaluationHandler<string, string>>(sp =>
 {
-    ChainEvaluationHandler<string, string> handlerA = new(sp.GetRequiredService<HandlerA>());
+    ChainedEvaluationHandler<string, string> handlerA = new(sp.GetRequiredService<HandlerA>());
 
-    ChainEvaluationHandler<string, string> handlerB = new(sp.GetRequiredService<HandlerB>());
+    ChainedEvaluationHandler<string, string> handlerB = new(sp.GetRequiredService<HandlerB>());
 
     return ChainedEvaluationHandlerBuilder<string, string>
         .Create(handlerA)
