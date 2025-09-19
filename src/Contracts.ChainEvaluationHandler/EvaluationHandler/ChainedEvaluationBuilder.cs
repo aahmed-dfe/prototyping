@@ -8,6 +8,7 @@ public sealed class ChainedEvaluationHandlerBuilder<TInput, TOutput>
         ArgumentNullException.ThrowIfNull(current);
         _handlers = [current];
     }
+    
     private IChainedEvaluationHandler<TInput, TOutput> Head => _handlers[_handlers.Count - 1];
 
     public static ChainedEvaluationHandlerBuilder<TInput, TOutput> Create(IChainedEvaluationHandler<TInput, TOutput> head) => new(head);

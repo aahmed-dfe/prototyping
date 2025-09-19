@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.ChainEvaluationHa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.Mapper", "src\Contracts.Mapper\Contracts.Mapper.csproj", "{42017B9A-2079-4E1B-A7CF-637B4F311199}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.Logging", "src\Contracts.Logging\Contracts.Logging.csproj", "{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,18 @@ Global
 		{42017B9A-2079-4E1B-A7CF-637B4F311199}.Release|x64.Build.0 = Release|Any CPU
 		{42017B9A-2079-4E1B-A7CF-637B4F311199}.Release|x86.ActiveCfg = Release|Any CPU
 		{42017B9A-2079-4E1B-A7CF-637B4F311199}.Release|x86.Build.0 = Release|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Debug|x64.Build.0 = Debug|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Debug|x86.Build.0 = Debug|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Release|x64.ActiveCfg = Release|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Release|x64.Build.0 = Release|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +79,7 @@ Global
 		{2E533EDF-7635-4DFB-B23B-C576AD61A211} = {ADC3D566-4983-4991-ABAF-16F17E17F806}
 		{160611FE-26AD-4FAA-9B6C-2100093C21EE} = {ADC3D566-4983-4991-ABAF-16F17E17F806}
 		{42017B9A-2079-4E1B-A7CF-637B4F311199} = {ADC3D566-4983-4991-ABAF-16F17E17F806}
+		{DFCCC277-5848-4D1A-BCB0-6E2D62F29FAA} = {ADC3D566-4983-4991-ABAF-16F17E17F806}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30BE7449-2427-4C45-AD14-6A1366991395}
